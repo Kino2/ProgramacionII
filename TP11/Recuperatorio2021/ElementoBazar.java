@@ -9,4 +9,8 @@ public abstract class ElementoBazar {
     public abstract double getPeso();
 
     public abstract ArrayList<String> getCategorias();
+
+    public abstract int getCantidad();
+
+    public abstract Producto getMenor();
 }

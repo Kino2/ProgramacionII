@@ -25,6 +25,24 @@ public class Producto extends ElementoBazar{
         return precio;
     }
 
+    @Override
+    public int getCantidad() {
+        return 1;
+    }
+
+    public void setPeso(double peso) {
+        if(peso <= 0){
+            this.peso = 0;
+        } else {
+            this.peso = peso;
+        }
+    }
+
+    @Override
+    public Producto getMenor() {
+        return this;
+    }
+
 
     
 

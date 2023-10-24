@@ -50,4 +50,25 @@ public class Combo extends ElementoBazar {
         return 0;
     }
 
+    @Override
+    public Producto getMenor() {
+        Producto menor = new Producto(0, 0);
+        for (ElementoBazar e : elementos) {
+           Producto prod = e.getMenor();
+            if(menor.getPeso() < prod.getPeso()){
+                menor = prod;
+            }
+        }
+        return menor;
+    }
+
+    @Override
+    public int getCantidad() {
+        int cantidad = 0;
+        for (ElementoBazar e : elementos) {
+            cantidad += e.getCantidad();
+        }
+        return cantidad;
+    }
+
 }
