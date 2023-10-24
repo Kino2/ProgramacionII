@@ -5,10 +5,12 @@ import java.util.Comparator;
 public class Comparador implements Comparator<Candidato> {
     private ComparadorAgrupacion compAgru;
     private ComparadorPartido compParti;
+    private ComparadorNombre compNombre;
 
     public Comparador() {
         compAgru = new ComparadorAgrupacion();
         compParti = new ComparadorPartido();
+        compNombre = new ComparadorNombre();
     }
 
     public int compare(Candidato c1, Candidato c2) {
@@ -23,6 +25,6 @@ public class Comparador implements Comparator<Candidato> {
         }
 
         // Si los partidos y las agrupaciones son iguales, compara por nombre
-        return c1.getNombre().compareTo(c2.getNombre());
+        return compNombre.compare(c1, c2);
     }
 }

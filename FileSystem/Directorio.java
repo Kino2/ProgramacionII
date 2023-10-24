@@ -61,7 +61,7 @@ public void addElemento(Elemento e) {
 
     /**
      * TUDAI
-     * TUDAI/1eranio/Prog2/Parcial.doc
+     * TUDAI/1eranio/Prog2/Parcial.Parcial.doc
      * TUDAI/1eranio/Prog2/Recu.pdf
      * TUDAI/1eranio/Prog2/Prefi.txt
      * TUDAI/2doanio

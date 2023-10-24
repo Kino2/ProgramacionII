@@ -1,6 +1,6 @@
 package FileSystem;
 
-import Parcialito4.Filtros.Filtro;
+import Parcial.Parcialito4.Filtros.Filtro;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

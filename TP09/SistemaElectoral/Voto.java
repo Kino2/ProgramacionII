@@ -10,11 +10,7 @@ public class Voto {
     private LocalTime hora;
 
 
-    public Voto(Votante votante, LocalTime hora) {
-        this.votante = votante;
-        this.hora = hora;
-    }
-
+   
     public Voto(Candidato candidatoVotado, Votante votante, LocalTime hora) {
         this.candidatoVotado = candidatoVotado;
         this.votante = votante;

@@ -46,16 +46,16 @@ public class Carpeta extends ElementoSA{
         for (int i = 0; i < elementos.size(); i++) {
             ElementoSA elemHijo = elementos.get(i);
 
-            //ArrayList<Archivo> resultadoParcial = elemHijo.buscar(condicion);
-            //resultado.addAll(resultadoParcial);
+            //ArrayList<Archivo> resultadoParcial.Parcial = elemHijo.buscar(condicion);
+            //resultado.addAll(resultadoParcial.Parcial);
 
             resultado.addAll(elemHijo.buscar(condicion, orden));
 
             //Si me piden que no haya repetidos
-            //ArrayList<Archivo> resultadoParcial = elemHijo.buscar(condicion);
-            //for (int j=0; j<resultadoParcial.size();j++)
-            //    if (!resultado.contains(resultadoParcial.get(j)))
-            //        resultado.add(resultadoParcial.get(j));
+            //ArrayList<Archivo> resultadoParcial.Parcial = elemHijo.buscar(condicion);
+            //for (int j=0; j<resultadoParcial.Parcial.size();j++)
+            //    if (!resultado.contains(resultadoParcial.Parcial.get(j)))
+            //        resultado.add(resultadoParcial.Parcial.get(j));
 
         }
         if (orden!=null)

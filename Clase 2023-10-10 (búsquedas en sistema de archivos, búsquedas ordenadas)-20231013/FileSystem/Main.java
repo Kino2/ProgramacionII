@@ -15,9 +15,9 @@ public class Main {
         Carpeta prog2 = new Carpeta("Prog2");
         primero.addElemento(prog2);
 
-        Archivo parcial =  new Archivo("Parcial.doc", 100);
+        Archivo Parcial.Parcial =  new Archivo("Parcial.Parcial.doc", 100);
         Archivo recu = new Archivo("Recuperatorio.pdf", 800);
-        prog2.addElemento(parcial);
+        prog2.addElemento(Parcial.Parcial);
         prog2.addElemento(recu);
 
         System.out.println("Tamanio de la raiz "+raiz.getTamanio());
@@ -29,9 +29,9 @@ public class Main {
 
         Comprimido examenesViejos = new Comprimido("examenes.zip",0.5);
 
-        Archivo parcial2 =  new Archivo("Parcial2.doc", 400);
+        Archivo Parcial.Parcial2 =  new Archivo("Parcial.Parcial2.doc", 400);
         Archivo recu2 = new Archivo("Recuperatorio2.pdf", 600);
-        examenesViejos.addElemento(parcial2);
+        examenesViejos.addElemento(Parcial.Parcial2);
         examenesViejos.addElemento(recu2);
 
         prog2.addElemento(examenesViejos);

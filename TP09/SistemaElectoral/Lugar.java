@@ -12,7 +12,11 @@ public class Lugar extends ElementoDistrito {
     }
 
     public void addDistrito(ElementoDistrito elemento) {
-        elementos.add(elemento);
+        if (!elementos.contains(elemento)) {
+            elementos.add(elemento);
+        } else {
+            System.out.println("No se ha podido agregar");
+        }
     }
 
     @Override
@@ -57,7 +61,7 @@ public class Lugar extends ElementoDistrito {
         return votosEnBlanco * 100 / cantVotos;
     }
 
-    public double porcentajeVotosHora(){
+    public double porcentajeVotosHora() {
         int votosEnHora = recuentoVotosEnDetHora();
         int cantVotos = getVotos();
         return votosEnHora * 100 / cantVotos;
