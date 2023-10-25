@@ -1,9 +1,9 @@
 package TP11.Recuperatorio2021;
 
-public class FiltroPeso extends Filtro {
+public class FiltroPesoSuperior extends Filtro {
     private double peso;
 
-    public FiltroPeso(double peso) {
+    public FiltroPesoSuperior(double peso) {
         this.peso = peso;
     }
 
