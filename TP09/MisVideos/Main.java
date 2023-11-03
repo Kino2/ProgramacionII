@@ -34,7 +34,7 @@ public class Main {
 
         FiltroPalabraClave filtro = new FiltroPalabraClave("gardening");
         Comparador orden = new Comparador();
-        System.out.println(playlist4.busqueda(filtro, orden));
+        System.out.println(playlist4.cantVideosYPlaylist());
 
     }
 }

@@ -7,17 +7,41 @@ public class PaqueteSimple extends PaqueteTuristico{
     private String origen;
     private String destino;
     private double costo;
-    private LocalDate fechaPagoAcordada;
+    private LocalDate fechaPago;
     private String datosAlojamiento;
 
-    public PaqueteSimple(String identificador, String origen, String destino, double costo, LocalDate fechaPagoAcordada,
+    public PaqueteSimple(String identificador, String origen, String destino, double costo, LocalDate fechaPago,
             String datosAlojamiento) {
         this.identificador = identificador;
         this.origen = origen;
         this.destino = destino;
         this.costo = costo;
-        this.fechaPagoAcordada = fechaPagoAcordada;
+        this.fechaPago = fechaPago;
         this.datosAlojamiento = datosAlojamiento;
+    }
+
+    public String getIdentificador() {
+        return identificador;
+    }
+
+    public String getOrigen() {
+        return origen;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public double getCosto() {
+        return costo;
+    }
+
+    public LocalDate getFecha() {
+        return fechaPago;
+    }
+
+    public String getDatosAlojamiento() {
+        return datosAlojamiento;
     }
 
 
